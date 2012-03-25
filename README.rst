@@ -35,3 +35,11 @@ Or in a Gunicorn config, you might do something like this::
         make_django_green()
     
     post_fork = def_post_fork
+
+The aim of this project is to allow greening of *most* Django codebases.
+We green all commonly used database adapters and third-party libraries.
+
+In general, it's not possible to automatically green an arbitrary Django
+codebase, as it may do something like call an external C library which
+blocks.  But for many projects this will work -- *especially* for largely
+self-contained bits of code, e.g. event handlers in ``django-socketio``.
