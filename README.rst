@@ -1,6 +1,6 @@
 A utility function to green Django for gevent usage.
 
-.. image:: http://mathburritos.org/misc/icons_for_github.png
+.. image:: http://mathburritos.org/misc/greendjango.png
 
 ``pip install green-django`` or, from source, ``python setup.py
 install``
