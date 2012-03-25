@@ -22,7 +22,7 @@ if module_exists('MySQLdb'):
 
 setup(
     name='green-django',
-    version='0.1',
+    version='0.1.0',
     description='Utility function to green Django for gevent usage.',
     author='Philip Neustrom',
     author_email='philipn@gmail.com',
