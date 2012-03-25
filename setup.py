@@ -13,6 +13,7 @@ INSTALL_REQUIRES = ['gevent']
 
 if module_exists('psycopg2'):
     INSTALL_REQUIRES.append('psycogreen')
+    INSTALL_REQUIRES.append('psycopg2 >= 2.2.0')
 if module_exists('MySQLdb'):
     # TODO: replace with ultramysql / umysql once someone adds a MySQLdb
     # wrapper around it.
