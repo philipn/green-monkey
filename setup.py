@@ -18,11 +18,13 @@ if module_exists('MySQLdb'):
     # TODO: replace with ultramysql / umysql once someone adds a MySQLdb
     # wrapper around it.
     INSTALL_REQUIRES.append('PyMySQL')
+if module_exists('zmq'):
+    INSTALL_REQUIRES.append('gevent-zeromq')
 
 
 setup(
     name='green-django',
-    version='0.1.0',
+    version='0.1.1',
     description='Utility function to green Django for gevent usage.',
     author='Philip Neustrom',
     author_email='philipn@gmail.com',
