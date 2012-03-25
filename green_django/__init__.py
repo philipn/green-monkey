@@ -16,6 +16,6 @@ def make_django_green():
         import pymysql
         pymysql.install_as_MySQLdb()
 
-    if module_exists('zmq'):
+    if module_exists('gevent_zeromq'):
         from gevent_zeromq import zmq
         sys.modules["zmq"] = zmq
