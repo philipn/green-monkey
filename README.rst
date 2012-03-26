@@ -2,6 +2,9 @@ Use green versions of all possible modules.  For use with gevent.
 
 .. image:: http://mathburritos.org/misc/greenmonkey.png
 
+Install & Usage
+---------------
+
 ``pip install green-monkey`` or, from source, ``python setup.py
 install``
 
