@@ -26,7 +26,7 @@ if module_exists('pylibmc'):
 
 setup(
     name='green-monkey',
-    version='0.1.1',
+    version='0.1.2',
     description='Use green versions of all possible modules.',
     author='Philip Neustrom',
     author_email='philipn@gmail.com',
