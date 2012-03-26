@@ -5,6 +5,9 @@ Use green versions of all possible modules.  For use with gevent.
 ``pip install green-monkey`` or, from source, ``python setup.py
 install``
 
+In addition to installing ``green_monkey``, this will install green versions
+of all possible modules.
+
 Then place the following::
 
     import green_monkey
@@ -12,8 +15,9 @@ Then place the following::
 
 somewhere *before* any of your normal imports or code.
 
-``green-monkey`` will use green versions of all modules you have installed.
-This is an extension of ``monkey.patch_all()`` beyond the standard library.
+You'll now be using green versions of all modules and the standard
+library will be patched. You can think of this as an extension of
+``monkey.patch_all()`` beyond the standard library.
 
 
 Example: greening Django project
