@@ -20,6 +20,8 @@ if module_exists('MySQLdb'):
     INSTALL_REQUIRES.append('PyMySQL')
 if module_exists('zmq'):
     INSTALL_REQUIRES.append('gevent-zeromq')
+if module_exists('pylibmc'):
+    INSTALL_REQUIRES.append('python-memcached')
 
 
 setup(

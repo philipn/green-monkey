@@ -1,8 +1,8 @@
 import sys
 
-from utils import module_exists
-
 from gevent import monkey
+
+from utils import module_exists
 
 
 def patch_all():
@@ -19,3 +19,7 @@ def patch_all():
     if module_exists('gevent_zeromq'):
         from gevent_zeromq import zmq
         sys.modules["zmq"] = zmq
+
+    if module_exists('pylibmc'):
+        import memcache
+        sys.modules["pylibmc"] = memcache
