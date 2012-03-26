@@ -23,12 +23,12 @@ if module_exists('zmq'):
 
 
 setup(
-    name='green-django',
+    name='green-monkey',
     version='0.1.1',
-    description='Utility function to green Django for gevent usage.',
+    description='Use green versions of all possible modules.',
     author='Philip Neustrom',
     author_email='philipn@gmail.com',
-    url='http://github.com/philipn/green-django/',
+    url='http://github.com/philipn/green-monkey/',
     packages=find_packages(),
     classifiers=[
         'Development Status :: 3 - Alpha',

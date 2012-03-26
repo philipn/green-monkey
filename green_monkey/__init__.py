@@ -5,7 +5,7 @@ from utils import module_exists
 from gevent import monkey
 
 
-def make_django_green():
+def patch_all():
     monkey.patch_all()
 
     if module_exists('psycogreen'):
