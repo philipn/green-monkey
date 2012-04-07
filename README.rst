@@ -22,7 +22,7 @@ Then place the following::
 somewhere *before* any of your normal imports or code.
 
 You'll now be using green versions of all modules and the standard
-library will be patched. You can think of this as an extension of
+library will be patched.  You can think of this as an extension of
 ``monkey.patch_all()`` beyond the standard library.
 
 
